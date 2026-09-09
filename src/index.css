@@ -1,0 +1,59 @@
+/* Global Reset & Base Typography */
+:root {
+  --font-family-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Meta UI Colors */
+  --bg-app: #ffffff;
+  --bg-page-outer: #f0f2f5;
+  --bg-card: #ffffff;
+  --bg-badge-red: #fde8e8;
+  --text-badge-red: #771515;
+  --text-primary: #1c1e21;
+  --text-secondary: #65676b;
+  --text-muted: #8a8d91;
+  --border-color: #e4e6eb;
+  --border-subtle: #f0f2f5;
+  --accent-blue: #0064e0;
+
+  /* Shadows */
+  --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  background-color: var(--bg-page-outer);
+  font-family: var(--font-family-sans);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Custom Scrollbar for Phone Container */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
